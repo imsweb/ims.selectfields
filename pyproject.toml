@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ims.selectfields"
+version = "0.1"
+requires-python = ">=3.11"
+description = "Testing apparatus for SelectFieldWidget and AjaxSelectFieldWidget"
+classifiers = [
+    "Programming Language :: Python",
+]
+authors = [
+    { name = "Eric Wohnlich", email = "wohnlice@imsweb.com" }
+]
+license = { text = "GPL" }
+
+dependencies = [
+    "plone==6.0.11"
+]
+
+[project.urls]
+repository = "https://github.com/imsweb/ims.selectfields"
+
+[project.entry-points."plone.autoinclude.plugin"]
+target = "plone"
+
+[tool.setuptools.packages.find]
+include = ["ims"]
+
+[tool.flake8]
+max-line-length = 120
+exclude = ["venv","buildout"]

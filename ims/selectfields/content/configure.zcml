@@ -1,0 +1,9 @@
+<configure
+        xmlns="http://namespaces.zope.org/zope">
+    <utility
+            component=".vocabulary.vocabulary_factory"
+            name="ims.selectfields.vf_function"/>
+    <utility
+            component=".vocabulary.VocabularyFactory"
+            name="ims.selectfields.vf_class"/>
+</configure>
